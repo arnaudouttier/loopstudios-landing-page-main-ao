@@ -29,6 +29,7 @@ import { ref } from 'vue'
       </ul>
     </nav>
   </div>
+  <!-- site-navigation.mobile -->
 </template>
 
 <style lang="scss" scoped>
