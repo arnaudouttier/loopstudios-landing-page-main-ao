@@ -23,8 +23,15 @@ import { ref } from 'vue'
   nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
     column-gap: 30px;
     row-gap: 50px;
+  }
+
+
+  a {
+    width: fit-content;
+
   }
 
   @media (hover:hover) {
@@ -37,7 +44,7 @@ import { ref } from 'vue'
         bottom: -6px;
         left: 50%;
         transform: translateX(-50%) scale(0);
-        transition: transform .3s ease;
+        transition: transform .3s ease-in-out;
         width: 30%;
         height: 3px;
         background-color: #fff;
@@ -50,9 +57,7 @@ import { ref } from 'vue'
         }
       }
     }
-
   }
-
 }
 
 :is(#site-footer) {

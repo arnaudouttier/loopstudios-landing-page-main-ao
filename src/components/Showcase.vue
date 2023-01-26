@@ -3,33 +3,34 @@ import { ref } from 'vue'
 </script>
 
 <template>
-    <section class="hero">
-        <div class="hero-image">
+    <section class="showcase">
+        <div class="showcase-image">
             <picture>
                 <source srcset="../assets/images/desktop/image-interactive.jpg" media="(min-width: 650px)" />
                 <img src="../assets/images/mobile/image-interactive.jpg" alt="image" />
             </picture>
         </div>
-        <div class="hero-description">
+        <div class="showcase-description">
             <h2 class="title"> The leader in interactive VR</h2>
-            <p class="hero-text"> Founded in 2011, Loopstudios has been producing world-class virtual reality
+            <p class="showcase-text"> Founded in 2011, Loopstudios has been producing world-class virtual reality
                 projects for some of the best companies around the globe. Our award-winning
                 creations have transformed businesses through digital experiences that bind
                 to their brand.
             </p>
         </div>
     </section>
-    <!-- .hero -->
+    <!-- .showcase -->
 </template>
 
 <style lang="scss" >
-.hero-description {
+.showcase-description {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     row-gap: 40px;
     text-align: center;
-    padding: 90px;
+    padding-block: 56px 0;
+    padding-inline: 16px;
 
 
     p {
@@ -39,23 +40,22 @@ import { ref } from 'vue'
 
 
 @media (min-width:1200px) {
-    .hero {
+    .showcase {
         display: flex;
         position: relative;
         text-align: initial;
     }
 
-    .hero-image {
+    .showcase-image {
         flex-shrink: 0;
     }
 
-    .hero-description {
+    .showcase-description {
         position: absolute;
         max-width: 550px;
-        bottom: -28%;
+        bottom: -18%;
         right: 0;
-        padding-right: 0;
-        text-align: inherit;
+        padding: 80px;
         padding-right: 0;
         text-align: initial;
 

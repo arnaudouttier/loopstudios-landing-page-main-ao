@@ -38,9 +38,35 @@
 <style lang="scss" >
 .social-navigation {
     display: flex;
-    align-items: center;
     column-gap: 30px;
+    align-items: center;
 }
+
+@media (hover:hover) {
+    a {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            transition: opacity .4s ease-in-out;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            opacity: 0;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
 
 :is(#site-footer) {
     .social-navigation {
