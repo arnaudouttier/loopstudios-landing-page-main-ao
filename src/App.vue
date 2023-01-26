@@ -75,9 +75,10 @@ import SocialNav from './components/SocialNav.vue'
   align-items: center;
 
   h1 {
-    font-size: 3rem;
+    /* 40px @ 375px increasing to 68px @ 1120px */
+    font-size: clamp(40px, calc(2.5rem + ((1vw - 3.75px) * 3.7584)), 68px);
     border: 2px solid #fff;
-    padding: 2.5rem;
+    padding: 1.8rem;
     color: #fff;
 
     span {
@@ -112,7 +113,7 @@ import SocialNav from './components/SocialNav.vue'
     background-image: url("./assets/images/desktop/image-hero.jpg");
 
     h1 {
-      max-width: 45%;
+      max-width: 53%;
 
       span {
         display: inline;
