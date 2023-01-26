@@ -71,7 +71,6 @@ import { ref } from 'vue'
     grid-auto-flow: row;
     row-gap: 70px;
 
-
     .creations_header {
         text-align: center;
         margin-bottom: 30px;
@@ -95,6 +94,8 @@ import { ref } from 'vue'
         background-size: cover;
         background-position: center;
         position: relative;
+        cursor: pointer;
+
 
         &.deep-earth {
             background-image: url("../assets/images/mobile/image-deep-earth.jpg");
@@ -162,6 +163,12 @@ import { ref } from 'vue'
         }
 
         .card {
+            transition: transform 1s ease-in-out;
+
+            &:hover {
+                transform: rotateY(10deg);
+            }
+
             &.deep-earth {
                 background-image: url("../assets/images/desktop/image-deep-earth.jpg");
             }
