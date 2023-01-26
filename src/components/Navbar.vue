@@ -35,7 +35,6 @@ onMounted(() => {
 
     </div>
     <!-- .;navbar -->
-
 </template>
 
 <style lang="scss" >

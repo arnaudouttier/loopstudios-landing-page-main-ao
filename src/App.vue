@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 import TheNavigationMobile from './components/TheNavigationMobile.vue'
 import Navbar from './components/Navbar.vue'
 import TheNavigation from './components/TheNavigation.vue'
@@ -45,8 +44,6 @@ import SocialNav from './components/SocialNav.vue'
   </footer>
   <!-- #site-footer -->
 
-
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
 <style lang="scss" >
@@ -83,7 +80,6 @@ import SocialNav from './components/SocialNav.vue'
   margin-inline: auto;
   text-align: center;
   color: #fff;
-
 }
 
 @media (min-width:772px) {
