@@ -1,19 +1,28 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import TheNavigationMobile from './components/TheNavigationMobile.vue'
 import Navbar from './components/Navbar.vue'
 import TheNavigation from './components/TheNavigation.vue'
 import Showcase from './components/Showcase.vue'
 import Creations from './components/Creations.vue'
 import SocialNav from './components/SocialNav.vue'
+
+let isActiveNav = false
+
+const updateNav = () => {
+  isActiveNav = !isActiveNav
+  console.log('app : ' + isActiveNav);
+}
+
 </script>
 
 <template>
 
-  <TheNavigationMobile />
+  <TheNavigationMobile :msg="isActiveNav" />
 
   <header id="site-header">
 
-    <Navbar />
+    <Navbar @toggle-nav="updateNav" />
 
     <div class="site-title">
       <h1>Immersive experiences <span>that</span> deliver</h1>
@@ -53,6 +62,7 @@ import SocialNav from './components/SocialNav.vue'
   display: grid;
   grid-auto-flow: row;
   row-gap: 190px;
+  position: relative;
 }
 
 #site-header {

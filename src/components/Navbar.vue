@@ -3,11 +3,18 @@ import TheNavigation from './TheNavigation.vue'
 import { ref, onMounted } from 'vue'
 
 const windowSize = ref(window.innerWidth)
+let navMenuIsOpen = false
+const emit = defineEmits(['toggleNav'])
 
 onMounted(() => {
     window.addEventListener('resize', () => { windowSize.value = window.innerWidth })
     return windowSize
 })
+
+// const toggleNav = () => {
+//     navMenuIsOpen = !navMenuIsOpen
+//     console.log(navMenuIsOpen);
+// }
 
 </script>
 
@@ -23,7 +30,7 @@ onMounted(() => {
         </div>
         <!-- .site-logo -->
 
-        <button class="btn btn-navigation navbar-toggler">
+        <button class="btn btn-navigation navbar-toggler" @click="$emit('toggleNav')">
             <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
                 <g fill="#FFF" fill-rule="evenodd">
                     <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />

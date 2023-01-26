@@ -1,9 +1,15 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+const message = defineProps(['msg'])
+
+console.log(message);
+
+
 </script>
 
 <template>
+  {{ message.msg }}
   <div class="site-navigation mobile">
     <div class="site-logo">
       <svg width="192" height="32" xmlns="http://www.w3.org/2000/svg">
@@ -34,6 +40,11 @@ import { ref } from 'vue'
 
 <style lang="scss" scoped>
 .site-navigation {
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  z-index: 99;
+
   &.mobile {
     display: none;
   }
