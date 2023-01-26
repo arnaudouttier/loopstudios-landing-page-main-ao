@@ -57,12 +57,12 @@ import SocialNav from './components/SocialNav.vue'
 
 #site-header {
   // @include grid-container();
-  min-height: calc(100svh - 80px);
+  min-height: calc(100svh - 50px);
   display: grid;
   grid-template-columns: min(90vw, 1120px);
   grid-template-rows: auto 1fr;
   justify-content: center;
-  padding-block: 80px 0;
+  padding-block: 50px 0;
   background-image: url("./assets/images/mobile/image-hero.jpg");
   background-position: center;
   background-size: cover;
@@ -70,20 +70,14 @@ import SocialNav from './components/SocialNav.vue'
   color: #fff;
 }
 
-// @supports (min-height : 100svh) {
-//   #site-header {
-//     min-height: calc(100svh - 80px);
-//   }
-// }
-
 .site-title {
   display: flex;
   align-items: center;
 
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     border: 2px solid #fff;
-    padding: 3rem;
+    padding: 2.5rem;
     color: #fff;
 
     span {
@@ -118,7 +112,7 @@ import SocialNav from './components/SocialNav.vue'
     background-image: url("./assets/images/desktop/image-hero.jpg");
 
     h1 {
-      max-width: 50%;
+      max-width: 45%;
 
       span {
         display: inline;
@@ -133,7 +127,7 @@ import SocialNav from './components/SocialNav.vue'
   }
 
   #site-header {
-    padding-block: 60px;
+    padding-block: 60px 0;
 
   }
 
