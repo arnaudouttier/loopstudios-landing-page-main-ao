@@ -9,7 +9,6 @@ import { ref } from 'vue'
                 <source srcset="../assets/images/desktop/image-interactive.jpg" media="(min-width: 650px)" />
                 <img src="../assets/images/mobile/image-interactive.jpg" alt="image" />
             </picture>
-
         </div>
         <div class="hero-description">
             <h2 class="title"> The leader in interactive VR</h2>
@@ -26,13 +25,43 @@ import { ref } from 'vue'
 <style lang="scss" >
 .hero-description {
     background-color: #fff;
-    padding-block: 90px;
-    padding-inline: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    text-align: center;
+    padding: 90px;
+
+
+    p {
+        text-align: center;
+    }
 }
 
-@media (min-width:772px) {
+
+@media (min-width:1200px) {
+    .hero {
+        display: flex;
+        position: relative;
+        text-align: initial;
+    }
+
+    .hero-image {
+        flex-shrink: 0;
+    }
+
     .hero-description {
-        padding: 90px;
+        position: absolute;
+        max-width: 550px;
+        bottom: -28%;
+        right: 0;
+        padding-right: 0;
+        text-align: inherit;
+        padding-right: 0;
+        text-align: initial;
+
+        p {
+            text-align: initial;
+        }
     }
 }
 </style>

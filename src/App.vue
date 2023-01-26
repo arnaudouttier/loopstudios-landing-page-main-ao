@@ -15,7 +15,9 @@ import SocialNav from './components/SocialNav.vue'
 
     <Navbar />
 
-    <h1 class="site-title">Immersive experiences that deliver</h1>
+    <div class="site-title">
+      <h1>Immersive experiences <span>that</span> deliver</h1>
+    </div>
 
   </header>
   <!-- #site-header -->
@@ -55,11 +57,33 @@ import SocialNav from './components/SocialNav.vue'
 
 #site-header {
   // @include grid-container();
+  min-height: 1300px;
   display: grid;
   grid-template-columns: min(90vw, 1120px);
+  grid-template-rows: auto 1fr;
   justify-content: center;
-  background-color: lightcoral;
   padding-block: 80px;
+  background-image: url("./assets/images/mobile/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-size: 4rem;
+    border: 2px solid #fff;
+    padding: 3rem;
+    color: #fff;
+
+    span {
+      display: block;
+    }
+  }
 }
 
 #site-main {
@@ -80,6 +104,21 @@ import SocialNav from './components/SocialNav.vue'
   margin-inline: auto;
   text-align: center;
   color: #fff;
+}
+
+@media (min-width:750px) {
+  #site-header {
+    min-height: 650px;
+    background-image: url("./assets/images/desktop/image-hero.jpg");
+
+    h1 {
+      max-width: 50%;
+
+      span {
+        display: inline;
+      }
+    }
+  }
 }
 
 @media (min-width:772px) {

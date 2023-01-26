@@ -10,28 +10,52 @@ import { ref } from 'vue'
         </div>
         <div class="creations_main">
             <div class="card deep-earth">
-                <h2 class="card-title"></h2>
+                <h3 class="card-title">
+                    <div>deep</div>
+                    <div>earth</div>
+                </h3>
             </div>
             <div class="card arcade">
-                <h2 class="card-title"></h2>
+                <h3 class="card-title">
+                    <div>night</div>
+                    <div>arcade</div>
+                </h3>
             </div>
             <div class="card soccer ">
-                <h2 class="card-title"></h2>
+                <h3 class="card-title">
+                    <div>soccer</div>
+                    <div>team vr</div>
+                </h3>
             </div>
             <div class="card the-grid ">
-                <h2 class="card-title"></h2>
+                <h3 class="card-title">
+                    <div>the</div>
+                    <div>grid</div>
+                </h3>
             </div>
             <div class="card above-vr">
-                <h2 class="card-title"></h2>
+                <h3 class="card-title">
+                    <div>from up</div>
+                    <div>above vr</div>
+                </h3>
             </div>
             <div class="card pocket">
-                <h2 class="card-title"></h2>
+                <h3 class="card-title">
+                    <div>pocket</div>
+                    <div>borealis</div>
+                </h3>
             </div>
             <div class="card curiosity">
-                <h2 class="card-title"></h2>
+                <h3 class="card-title">
+                    <div>the</div>
+                    <div>curiosity</div>
+                </h3>
             </div>
             <div class="card fisheye">
-                <h2 class="card-title"></h2>
+                <h3 class="card-title">
+                    <div>make it</div>
+                    <div>fisheye</div>
+                </h3>
             </div>
         </div>
         <button class="btn btn-primary is-black mobile">SEE ALL</button>
@@ -70,6 +94,7 @@ import { ref } from 'vue'
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        position: relative;
 
         &.deep-earth {
             background-image: url("../assets/images/mobile/image-deep-earth.jpg");
@@ -102,6 +127,14 @@ import { ref } from 'vue'
         &.fisheye {
             background-image: url("../assets/images/mobile/image-fisheye.jpg");
         }
+
+        h3 {
+            position: absolute;
+            color: #fff;
+            bottom: 40px;
+            left: 40px;
+            font-size: 35px;
+        }
     }
 
     button.mobile {
@@ -125,6 +158,7 @@ import { ref } from 'vue'
 
         .creations_main {
             grid-auto-rows: 450px;
+            row-gap: 30px;
         }
 
         .card {
