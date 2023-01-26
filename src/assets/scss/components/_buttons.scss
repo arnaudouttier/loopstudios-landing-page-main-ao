@@ -3,4 +3,23 @@
   border-radius: 0;
   background-color: transparent;
   cursor: pointer;
+  font-family: $font_secondary;
+}
+
+.btn-primary {
+  padding-block: 20px;
+  padding-inline: 65px;
+  border-width: 2px;
+  border-style: solid;
+  letter-spacing: 2px;
+
+  &.is-grey {
+    color: $gray_200;
+    border-color: $gray_200;
+  }
+
+  &.is-black {
+    color: $black;
+    border-color: $black;
+  }
 }

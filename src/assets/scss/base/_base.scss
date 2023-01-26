@@ -2,16 +2,23 @@
 
 body {
   font-family: $font_primary;
-  background-color: lightcoral;
+  background-color: $white;
   margin: 0;
   padding: 0;
 }
 
 ul {
   list-style: none;
+  padding-inline: 0;
 }
 
 a {
   text-decoration: none;
   color: $white;
+}
+
+img {
+  width: 100%;
+  max-height: auto;
+  display: block;
 }

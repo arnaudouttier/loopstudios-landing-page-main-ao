@@ -6,13 +6,11 @@ import { ref } from 'vue'
 <template>
   <div class="site-navigation">
     <nav>
-      <ul class="list">
-        <li class="list-item"><a href="#">About</a></li>
-        <li class="list-item"><a href="#">Careers</a></li>
-        <li class="list-item"><a href="#">Events</a></li>
-        <li class="list-item"><a href="#">Products</a></li>
-        <li class="list-item"><a href="#">Support</a></li>
-      </ul>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Events</a>
+      <a href="#">Products</a>
+      <a href="#">Support</a>
     </nav>
   </div>
   <!-- site-navigation -->
@@ -22,7 +20,7 @@ import { ref } from 'vue'
 .site-navigation {
   color: $white;
 
-  .list {
+  nav {
     display: flex;
     flex-direction: column;
     column-gap: 30px;
@@ -30,11 +28,24 @@ import { ref } from 'vue'
   }
 }
 
+:is(#site-footer) {
+  .site-navigation {
+    margin-block: 70px;
+  }
+}
+
 @media (min-width:772px) {
   .site-navigation {
-    .list {
+    nav {
       flex-direction: row;
     }
   }
+
+  :is(#site-footer) {
+    .site-navigation {
+      margin-block: 0;
+    }
+  }
+
 }
 </style>
