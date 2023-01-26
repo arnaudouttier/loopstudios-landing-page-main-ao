@@ -38,13 +38,14 @@
 <style lang="scss" >
 .social-navigation {
     display: flex;
-    justify-content: center;
+    align-items: center;
     column-gap: 30px;
 }
 
 :is(#site-footer) {
     .social-navigation {
         justify-content: center;
+        margin-bottom: 1rem;
     }
 }
 
@@ -55,11 +56,12 @@
 
     :is(#site-footer) {
         .social-navigation {
-            justify-content: initial;
+            justify-content: end;
+            grid-column-start: 2;
+            grid-row-start: 1;
+            margin-bottom: 0;
         }
     }
-
-
 
 }
 </style>

@@ -143,9 +143,14 @@ import SocialNav from './components/SocialNav.vue'
     width: min(90vw, 1120px);
     margin-inline: auto;
     display: grid;
+    align-items: center;
     row-gap: 30px;
     grid-template-columns: 1fr 1fr;
     text-align: initial;
+  }
+
+  .copyright {
+    text-align: right;
   }
 }
 </style>
