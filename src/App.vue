@@ -75,7 +75,7 @@ import SocialNav from './components/SocialNav.vue'
   align-items: center;
 
   h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     border: 2px solid #fff;
     padding: 3rem;
     color: #fff;
