@@ -95,7 +95,28 @@ import { ref } from 'vue'
         background-position: center;
         position: relative;
         cursor: pointer;
+        position: relative;
 
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgb(255, 255, 255, 0.8);
+            opacity: 0;
+            transition: opacity .4s linear;
+
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+
+            h3 {
+                color: #000;
+            }
+        }
 
         &.deep-earth {
             background-image: url("../assets/images/mobile/image-deep-earth.jpg");
@@ -135,6 +156,8 @@ import { ref } from 'vue'
             bottom: 40px;
             left: 40px;
             font-size: 35px;
+            transition: color .4s linear;
+
         }
     }
 
@@ -163,11 +186,6 @@ import { ref } from 'vue'
         }
 
         .card {
-            transition: transform 1s ease-in-out;
-
-            &:hover {
-                transform: rotateY(10deg);
-            }
 
             &.deep-earth {
                 background-image: url("../assets/images/desktop/image-deep-earth.jpg");
