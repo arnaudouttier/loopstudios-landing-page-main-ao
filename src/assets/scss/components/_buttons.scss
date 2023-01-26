@@ -12,6 +12,7 @@
   border-width: 2px;
   border-style: solid;
   letter-spacing: 2px;
+  transition: background-color 0.4s ease;
 
   &.is-grey {
     color: $gray_200;
@@ -21,5 +22,17 @@
   &.is-black {
     color: $black;
     border-color: $black;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &.is-grey {
+      background-color: $gray_200;
+    }
+
+    &.is-black {
+      background-color: $black;
+    }
   }
 }

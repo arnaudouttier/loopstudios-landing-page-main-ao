@@ -26,6 +26,33 @@ import { ref } from 'vue'
     column-gap: 30px;
     row-gap: 50px;
   }
+
+  @media (hover:hover) {
+    a {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        transition: transform .3s ease;
+        width: 30%;
+        height: 3px;
+        background-color: #fff;
+      }
+
+      &:hover {
+        &::after {
+          transform: translateX(-50%) scale(1);
+
+        }
+      }
+    }
+
+  }
+
 }
 
 :is(#site-footer) {
