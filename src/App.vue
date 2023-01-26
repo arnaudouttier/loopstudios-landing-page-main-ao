@@ -57,7 +57,7 @@ import SocialNav from './components/SocialNav.vue'
 
 #site-header {
   // @include grid-container();
-  min-height: calc(100vh - 80px);
+  min-height: calc(100svh - 80px);
   display: grid;
   grid-template-columns: min(90vw, 1120px);
   grid-template-rows: auto 1fr;
@@ -70,11 +70,11 @@ import SocialNav from './components/SocialNav.vue'
   color: #fff;
 }
 
-@supports (min-height : 100svh) {
-  #site-header {
-    min-height: calc(100svh - 80px);
-  }
-}
+// @supports (min-height : 100svh) {
+//   #site-header {
+//     min-height: calc(100svh - 80px);
+//   }
+// }
 
 .site-title {
   display: flex;
