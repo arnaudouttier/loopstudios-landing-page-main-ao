@@ -57,12 +57,12 @@ import SocialNav from './components/SocialNav.vue'
 
 #site-header {
   // @include grid-container();
-  min-height: 1300px;
+  min-height: calc(100vh - 80px);
   display: grid;
   grid-template-columns: min(90vw, 1120px);
   grid-template-rows: auto 1fr;
   justify-content: center;
-  padding-block: 80px;
+  padding-block: 80px 0;
   background-image: url("./assets/images/mobile/image-hero.jpg");
   background-position: center;
   background-size: cover;
