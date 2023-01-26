@@ -70,9 +70,9 @@ import SocialNav from './components/SocialNav.vue'
   color: #fff;
 }
 
-@supports (min-height : 100lvh) {
+@supports (min-height : 100svh) {
   #site-header {
-    min-height: calc(100lvh - 80px);
+    min-height: calc(100svh - 80px);
   }
 }
 
