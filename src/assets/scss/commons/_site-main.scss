@@ -1,0 +1,14 @@
+/* #site-main */
+#site-main {
+  width: min(90vw, 1120px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 160px;
+}
+
+@media (min-width: 772px) {
+  #site-main {
+    row-gap: 184px;
+  }
+}

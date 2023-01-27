@@ -59,21 +59,6 @@ import SocialNav from './components/SocialNav.vue'
   position: relative;
 }
 
-#site-header {
-  // @include grid-container();
-  min-height: calc(100svh - 50px);
-  display: grid;
-  grid-template-columns: min(90vw, 1120px);
-  grid-template-rows: auto 1fr;
-  justify-content: center;
-  padding-block: 50px 0;
-  background-image: url("./assets/images/mobile/image-hero.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-}
-
 .site-title {
   display: flex;
   align-items: center;
@@ -91,64 +76,7 @@ import SocialNav from './components/SocialNav.vue'
   }
 }
 
-#site-main {
-  width: min(90vw, 1120px);
-  margin-inline: auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: 190px;
-}
-
-#site-footer {
-  background-color: #000;
-  padding-block: 100px;
-}
-
-.inner-footer {
-  width: min(90vw, 1120px);
-  margin-inline: auto;
-  text-align: center;
-  color: #fff;
-}
-
-@media (min-width:750px) {
-  #site-header {
-    min-height: 650px;
-    background-image: url("./assets/images/desktop/image-hero.jpg");
-
-    h1 {
-      max-width: 53%;
-
-      span {
-        display: inline;
-      }
-    }
-  }
-}
-
-@media (min-width:772px) {
-  #site-header {
-    padding-block: 60px 0;
-
-  }
-
-  #site-main {
-    row-gap: 184px;
-  }
-
-  #site-footer {
-    padding-block: 40px;
-  }
-
-  .inner-footer {
-    width: min(90vw, 1120px);
-    margin-inline: auto;
-    display: grid;
-    align-items: center;
-    row-gap: 30px;
-    grid-template-columns: 1fr 1fr;
-    text-align: initial;
-  }
+@media (min-width: 772px) {
 
   .copyright {
     text-align: right;
