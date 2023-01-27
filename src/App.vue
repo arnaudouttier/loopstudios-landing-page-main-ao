@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { reactive } from 'vue';
 import TheNavigationMobile from './components/TheNavigationMobile.vue'
 import Navbar from './components/Navbar.vue'
 import TheNavigation from './components/TheNavigation.vue'
