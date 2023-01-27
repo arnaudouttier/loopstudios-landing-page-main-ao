@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { reactive } from 'vue';
 import TheNavigationMobile from './components/TheNavigationMobile.vue'
 import Navbar from './components/Navbar.vue'
 import TheNavigation from './components/TheNavigation.vue'
@@ -7,22 +7,15 @@ import Showcase from './components/Showcase.vue'
 import Creations from './components/Creations.vue'
 import SocialNav from './components/SocialNav.vue'
 
-let isActiveNav = false
-
-const updateNav = () => {
-  isActiveNav = !isActiveNav
-  console.log('app : ' + isActiveNav);
-}
-
 </script>
 
 <template>
 
-  <TheNavigationMobile :msg="isActiveNav" />
+  <TheNavigationMobile />
 
   <header id="site-header">
 
-    <Navbar @toggle-nav="updateNav" />
+    <Navbar />
 
     <div class="site-title">
       <h1>Immersive experiences <span>that</span> deliver</h1>
@@ -61,7 +54,8 @@ const updateNav = () => {
 #app {
   display: grid;
   grid-auto-flow: row;
-  row-gap: 190px;
+  /* 120px @ 375px increasing to 165px @ 1120px */
+  row-gap: clamp(120px, calc(7.5rem + ((1vw - 3.75px) * 6.0403)), 165px);
   position: relative;
 }
 
@@ -133,10 +127,6 @@ const updateNav = () => {
 }
 
 @media (min-width:772px) {
-  #app {
-    row-gap: 165px;
-  }
-
   #site-header {
     padding-block: 60px 0;
 
