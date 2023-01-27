@@ -64,7 +64,6 @@
             }
         }
     }
-
 }
 
 :is(#site-footer) {

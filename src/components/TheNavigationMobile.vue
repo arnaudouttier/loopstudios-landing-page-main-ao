@@ -39,7 +39,7 @@ import { store } from '../assets/store.js'
 .container {
   max-width: 90vw;
   margin-inline: auto;
-  padding-block: 50px 0;
+  padding-block: 56px 0;
 }
 
 .nav_header {
@@ -51,7 +51,7 @@ import { store } from '../assets/store.js'
 .nav_main {
   nav {
     align-items: start;
-    row-gap: 35px;
+    row-gap: 25px;
   }
 
   a {
