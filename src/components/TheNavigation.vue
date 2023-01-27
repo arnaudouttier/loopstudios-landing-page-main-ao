@@ -49,7 +49,6 @@
       &:hover {
         &::after {
           transform: translateX(-50%) scale(1);
-
         }
       }
     }
