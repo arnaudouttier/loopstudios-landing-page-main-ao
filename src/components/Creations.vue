@@ -69,7 +69,7 @@ import { ref } from 'vue'
 .creations {
     display: grid;
     grid-auto-flow: row;
-    row-gap: 70px;
+    row-gap: 50px;
 
     .creations_header {
         text-align: center;
@@ -83,10 +83,8 @@ import { ref } from 'vue'
     .creations_main {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-auto-flow: row;
-        grid-auto-rows: 250px;
-        row-gap: 50px;
-        column-gap: 30px;
+        grid-auto-rows: 160px;
+        gap: 30px;
     }
 
     .card {
@@ -153,8 +151,8 @@ import { ref } from 'vue'
         h3 {
             position: absolute;
             color: #fff;
-            bottom: 40px;
-            left: 40px;
+            bottom: 25px;
+            left: 25px;
             font-size: 35px;
             transition: color .4s linear;
 
@@ -182,7 +180,6 @@ import { ref } from 'vue'
 
         .creations_main {
             grid-auto-rows: 450px;
-            row-gap: 30px;
         }
 
         .card {
@@ -217,6 +214,11 @@ import { ref } from 'vue'
 
             &.fisheye {
                 background-image: url("../assets/images/desktop/image-fisheye.jpg");
+            }
+
+            h3 {
+                bottom: 30px;
+                left: 30px;
             }
         }
 

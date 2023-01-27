@@ -7,11 +7,12 @@
 }
 
 .btn-primary {
-  padding-block: 20px;
-  padding-inline: 65px;
+  font-size: 18px;
+  letter-spacing: 6px;
+  padding-block: 11px;
+  padding-inline: 40px;
   border-width: 2px;
   border-style: solid;
-  letter-spacing: 2px;
   transition: background-color 0.4s ease;
 
   &.is-grey {

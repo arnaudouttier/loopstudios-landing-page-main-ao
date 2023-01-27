@@ -38,7 +38,7 @@
 <style lang="scss" >
 .social-navigation {
     display: flex;
-    column-gap: 30px;
+    column-gap: 20px;
     align-items: center;
 }
 
@@ -67,7 +67,6 @@
 
 }
 
-
 :is(#site-footer) {
     .social-navigation {
         justify-content: center;
@@ -76,9 +75,6 @@
 }
 
 @media (min-width:772px) {
-    .social-navigation {
-        column-gap: 15px;
-    }
 
     :is(#site-footer) {
         .social-navigation {
@@ -88,6 +84,5 @@
             margin-bottom: 0;
         }
     }
-
 }
 </style>

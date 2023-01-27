@@ -25,13 +25,13 @@ import { ref } from 'vue'
     flex-direction: column;
     align-items: center;
     column-gap: 30px;
-    row-gap: 50px;
+    row-gap: 40px;
   }
 
 
   a {
     width: fit-content;
-
+    font-weight: bold;
   }
 
   @media (hover:hover) {

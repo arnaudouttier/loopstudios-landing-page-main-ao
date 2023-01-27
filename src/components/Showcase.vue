@@ -32,12 +32,10 @@ import { ref } from 'vue'
     padding-block: 56px 0;
     padding-inline: 16px;
 
-
     p {
         text-align: center;
     }
 }
-
 
 @media (min-width:1200px) {
     .showcase {
@@ -52,12 +50,16 @@ import { ref } from 'vue'
 
     .showcase-description {
         position: absolute;
-        max-width: 550px;
+        max-width: 43%;
         bottom: -18%;
         right: 0;
         padding: 80px;
         padding-right: 0;
         text-align: initial;
+
+        h2 {
+            font-size: 54px;
+        }
 
         p {
             text-align: initial;
