@@ -60,9 +60,7 @@ import { ref } from 'vue'
         </div>
         <button class="btn btn-primary is-black mobile">SEE ALL</button>
     </section>
-
-    <!-- .section -->
-
+    <!-- .creations -->
 </template>
 
 <style lang="scss" >
