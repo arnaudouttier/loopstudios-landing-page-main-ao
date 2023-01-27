@@ -26,10 +26,8 @@
     row-gap: 40px;
   }
 
-
   a {
     width: fit-content;
-    font-weight: bold;
   }
 
   @media (hover:hover) {
